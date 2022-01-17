@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css" />
+  <title>Жилой комплекс мелодия</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <div class="header__top">
+
+        <div class="header__logo">
+          <img src="img/melody.svg" alt="logo" />
+        </div>
+
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="#1">Подобрать квартиру</a></li>
+          <li class="header__menu-item"><a href="#2">Забронировать квартиру</a></li>
+          <li class="header__menu-item"><a href="#3">Ход строителства</a></li>
+          <li class="header__menu-item"><a href="#4">Проектная декларация</a></li>
+        </ul>
+
+        <div class="header__callback">
+          <div>Закажите звонок</div>
+          <a href="Tel:+78431234567">8 (843) 123-45-67 </a>
+        </div>
+      </div>
+
+      <div class="header__menu768">
+
+        <img src="img/burger.webp" class="burger-menu js-burger-menu" alt="бургер меню" />
+
+        <ul class="header__menu768-list js-header-menu">
+          <li class="header__menu-item"><a href="#1">Подобрать квартиру</a></li>
+          <li class="header__menu-item"><a href="#2">Забронировать квартиру</a></li>
+          <li class="header__menu-item"><a href="#3">Ход строительства</a></li>
+          <li class="header__menu-item"><a href="#4">Проектная декларация</a></li>
+        </ul>
+      </div>
+
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">Подобрать квартиру</h1>
+
+      <div class="main__img-box">
+        <img class="main__img-floor-point js-floor-point" src="img/floor_.webp" alt="Указатель этажа" />
+
+        <picture>
+          <source srcset="img/home4.webp" media="(max-width: 480px)" />
+          <source srcset="img/home2.webp" media="(max-width: 1285px)" />
+          <source srcset="img/home1.webp" media="(max-width: 1440px)" />
+          <img src="img/home1.webp" alt="жилой комплекс" />
+        </picture>
+
+        <span class="message">
+          На 1 этаже нет квартир
+        </span>
+      </div>
+
+      <div class="main__choose-ground">
+        <h2 class="main__choose-title">Выберите желаемый этаж </h2>
+
+        <div class="main__ground-number">
+          <svg class="main__vector main__vector-up js-vector-up" width="33" height="20" viewbox="0 0 33 20">
+            <use xlink:href="img/stack/sprite.svg#Vector_up"></use>
+          </svg>
+
+          <span class="main__ground js-main-ground">07</span>
+
+          <svg class="main__vector main__vector-down js-vector-down" width="33" height="21" viewbox="0 0 33 21">
+            <use xlink:href="img/stack/sprite.svg#Vector_down"></use>
+          </svg>
+        </div>
+
+        <a href="#100" class="main__choose-link js-show-flats">
+          Смотреть квартиры на этаже
+        </a>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+
+      <div class="footer__right">
+        <div class="footer__right-inner">
+          <img src="img/logo.svg" class="footer__logo" alt="логотип компании Мелодия" />
+
+          <div class="footer__callback">
+            <div>Закажите звонок</div>
+            <a href="Tel:+78431234567">8 (843) 123-45-67 </a>
+          </div>
+
+          <ul class="footer__sociallinks">
+            <li class="footer__sociallinks-item">
+              <a href="#" class="fb">
+                <svg width="20" height="20" class="footer__sociallink-icon" viewbox="0 0 20 20">
+                  <use xlink:href="img/stack/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__sociallinks-item">
+              <a href="#" class="insta">
+                <svg width="20" height="20" class="footer__sociallink-icon" viewbox="0 0 20 20">
+                  <use xlink:href="img/stack/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__sociallinks-item">
+              <a href="#" class="twit">
+                <svg width="20" height="20" class="footer__sociallink-icon" viewbox="0 0 20 20">
+                  <use xlink:href="img/stack/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__sociallinks-item">
+              <a href="#" class="tube">
+                <svg width="20" height="20" class="footer__sociallink-icon" viewbox="0 0 20 20">
+                  <use xlink:href="img/stack/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <ul class="footer__left">
+        <li class="footer__left-item"><a href="#5">Политика конфиденциальности</a></li>
+        <li class="footer__left-item"><a href="#6">Публичная оферта</a></li>
+        <li class="footer__left-item"><a href="#7">Контакты</a></li>
+      </ul>
+
+    </footer>
+
+    <section class="show-flats js-show-flats-part js-hide-show">
+      <h2 class="visually-hidden">Выбор квартиры</h2>
+
+      <article class="show-flats__floor">
+
+        <div class="show-flats__floor-left">
+          <h3 class="show-flats__title show-flats__title-left">Этаж 7</h3>
+          <div class="show-flats__floor-floor">
+            <img src="img/floor.webp" alt="Этаж с квартирами">
+
+            <img src="img/0.webp" alt="Схема" class="flat-scatch flat-hide" data-order="flat_0" />
+            <img src="img/1.webp" alt="Схема" class="flat-scatch flat-hide" data-order="flat_1" />
+            <img src="img/2.webp" alt="Схема" class="flat-scatch flat-hide" data-order="flat_2" />
+            <img src="img/3.webp" alt="Схема" class="flat-scatch flat-hide" data-order="flat_3" />
+            <img src="img/4.webp" alt="Схема" class="flat-scatch flat-hide" data-order="flat_4" />
+            <img src="img/5.webp" alt="Схема" class="flat-scatch flat-hide" data-order="flat_5" />
+            <img src="img/6.webp" alt="Схема" class="flat-scatch flat-hide" data-order="flat_6" />
+          </div>
+        </div>
+
+        <div class="show-flats__floor-right">
+
+          <h3 class="show-flats__title show-flats__title-right">Выберите квартиру</h3>
+          <ul class="show-flats__list">
+            <li class="show-flats__list-item" data-order="flat_0">кв. 40, 2 комн. 50 кв. м.</li>
+            <li class="show-flats__list-item" data-order="flat_1">кв. 41, 2 комн. 50 кв. м.</li>
+            <li class="show-flats__list-item" data-order="flat_2">кв. 42, 2 комн. 50 кв. м.</li>
+            <li class="show-flats__list-item" data-order="flat_3">кв. 43, 2 комн. 50 кв. м.</li>
+            <li class="show-flats__list-item" data-order="flat_4">кв. 44, 2 комн. 50 кв. м.</li>
+            <li class="show-flats__list-item" data-order="flat_5">кв. 45, 2 комн. 50 кв. м.</li>
+            <li class="show-flats__list-item" data-order="flat_6">кв. 46, 2 комн. 50 кв. м.</li>
+          </ul>
+
+          <p class="show-flats__comment">
+            Квартиры, отмеченные серым, уже выкуплены
+          </p>
+
+          <svg width="28" height="28" viewbox="0 0 28 28" class="show-flats__btn-close js-btn-close">
+            <use xlink:href="img/stack/sprite.svg#close"></use>
+          </svg>
+        </div>
+
+      </article>
+
+    </section>
+
+  </div>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

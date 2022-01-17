@@ -1,0 +1,155 @@
+.footer {
+  display: flex;
+  padding: 50px 80px;
+  background-color: #D7D7D7;
+
+  a {
+    color: #42322d;
+  }
+
+  a:hover {
+    color:rgb(128, 193, 247);
+  }
+ 
+}
+
+.footer__logo {
+  width: 65px;
+  margin-right: 40px;
+  align-self: flex-start;
+}
+
+.footer__callback {
+  min-width: 142px;
+  margin-right: 59px;
+  padding-top: 12px;
+  font-size: 14px;
+  color: #635854;
+
+  a:link {
+    display: block;
+    font-family: 'roboto-medium', sans-serif;
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  a:hover {
+    color:rgb(45, 93, 250);
+  }
+}
+
+.footer__sociallinks {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 145px;
+}
+
+.footer__sociallinks-item {
+  margin-right: 15px;
+  padding-top: 23px;
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+}
+
+.footer__sociallink-icon {
+  transition-property: fill, transform;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+  fill: #635854;
+  &:hover {
+    fill: rgb(45, 93, 250);
+    transform: scale(1.2);
+  }
+}
+
+.footer__right {
+  display: flex;
+  margin-right: 50px;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  width: 50%;
+
+}
+
+.footer__right-inner {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.footer__left {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+}
+
+.footer__left-item {
+  margin-right: 22px;
+  padding-top: 21px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+}
+
+@media(max-width: 1024px) {
+  .footer__left {
+    justify-content: right;
+    flex-direction: column;
+  }
+
+  .footer__left-item {
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+  }
+}
+
+@media(max-width: 640px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer__callback {
+    margin-right: 0;
+  }
+
+  .footer__right {
+    margin-right: 10px;
+  }
+
+}
+
+@media (max-width: 480px){
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    margin-right: 0;
+  }
+
+  .footer__callback {
+    text-align: center;
+  }
+
+  .footer__right-inner {
+    justify-content: center;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .footer__right {
+    display: flex;
+    margin-right: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: center;
+    margin-right: 0;
+    width: 50%;
+  
+  }
+
+}
