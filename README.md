@@ -6,11 +6,11 @@ https://www.sitescontrol.pp.ua/site5/index.html
 
 Применённые web-технологии:
 
-Адаптивная верстка
-Кроссбраузерная верстка
-PixelPerfect
-Препроцессор SASS
-CSS-grid
-flexbox
-javaScript
-Gulp
+- Адаптивная верстка
+- Кроссбраузерная верстка
+- PixelPerfect
+- Препроцессор SASS
+- CSS-grid
+- flexbox
+- javaScript
+- Gulp
